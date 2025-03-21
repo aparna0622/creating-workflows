@@ -10,7 +10,8 @@ jobs:
         uses: actions/checkout@v4
       - name: second-step
         run: |
-          echo "Hello"
+          echo "Hello from Ubuntu"
+          env | sort
   job2:
     name: second-job
     runs-on: windows-latest
@@ -20,6 +21,7 @@ jobs:
       - name: second-step
         run: |
           echo "Hello"
+          "Get-childItem Env: | Sort-Object Name"
     
       
     
