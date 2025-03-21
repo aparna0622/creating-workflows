@@ -5,9 +5,15 @@ jobs:
   job1:
     name: first-job
     runs-on: ubuntu-latest
+    steps:
+      - name: first-step
+        uses: actions/checkout@v4
+      - name: second-step
+        run: |
+          echo "Hello"
   job2:
     name: second-job
-    runs-on: windows-lates
+    runs-on: windows-latest
     steps:
       - name: first-step
         uses: actions/checkout@v4
