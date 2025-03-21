@@ -1,8 +1,8 @@
 name: My first Workflow
 on: 
   push:
-    branches:
-      - main
+    branches-ignore:
+      - master
 
 jobs:
   job1:
